@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}Let’s try that again · Dina’s Laundry Shop{% endblock %}
+{% block body %}<main id="main" class="standalone-page container"><a class="brand" href="{{ url_for('main.index') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Dina’s Laundry Shop" width="282" height="64"></a><div class="standalone-message"><h1>Let’s try that again.</h1><p>{{ message }}</p><a class="button" href="{{ url_for('main.index', _anchor='pickup') }}">Return to the pickup form</a></div></main>{% endblock %}

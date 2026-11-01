@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-PH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12615b">
+  <meta name="description" content="Explore wash, dry and fold, ironing, and bedding services at Dina’s Laundry Shop. Calculate a sample estimate and request a pickup.">
+  <title>{% block title %}Dina’s Laundry Shop · A little more you time{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+  <link rel="preload" href="{{ url_for('static', filename='fonts/dm-sans-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ url_for('static', filename='fonts/fraunces-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-shirt" viewBox="0 0 32 32"><path d="m10 5-7 5 4 7 4-2v12h10V15l4 2 4-7-7-5c-2 5-10 5-12 0Z"/></symbol>
+    <symbol id="i-iron" viewBox="0 0 32 32"><path d="M4 24h24v-7l-5-7H12M4 24c0-7 6-11 13-11h8M12 7h9l3 6M27 7V3"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 32 32"><path d="M4 27V11m24 16V11M4 22h24M7 17V8h18v9M4 17h24v5H4Zm7-4h4m3 0h4"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 32 32"><path d="m9 7 3 6-6 10a5 5 0 0 0 4 7h12a5 5 0 0 0 4-7l-6-10 3-6c-5 3-9-3-14 0Zm3 6h8M13 20c2-2 4 2 6 0m-6 5c2-2 4 2 6 0"/></symbol>
+    <symbol id="i-wash" viewBox="0 0 32 32"><rect x="5" y="3" width="22" height="26" rx="3"/><circle cx="16" cy="19" r="7"/><path d="M5 10h22M9 6.5h1m4 0h1m-6 13c3-4 7 4 14 0"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 32 32"><path d="M3 22V8h16v14H3Zm16-10h5l5 6v4H19M25 18h4"/><circle cx="9" cy="24" r="3"/><circle cx="24" cy="24" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="m7 3 3 5-3 3c2 3 3 4 6 6l3-3 5 3c-1 6-5 5-10 2S2 11 3 6c0-2 2-3 4-3Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6h4"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 32 32"><path d="M16 3C11 11 5 16 5 21a11 11 0 0 0 22 0c0-5-6-10-11-18Z"/><path d="M7 21c4-4 8 4 12 0s5-2 6-1"/></symbol>
+  </defs></svg>
+  {% block body %}{% endblock %}
+</body>
+</html>

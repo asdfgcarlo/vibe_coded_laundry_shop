@@ -1,0 +1,13 @@
+{
+  "name": "dinas-laundry-browser-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/calculator.test.js",
+    "test:ui": "node tests/browser.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "playwright": "^1.56.1"
+  }
+}

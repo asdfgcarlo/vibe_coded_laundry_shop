@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% macro icon(name, cls='') %}<svg class="icon {{ cls }}" aria-hidden="true"><use href="#i-{{ name }}"/></svg>{% endmacro %}
+{% macro field_error(name) %}<span class="field-error" id="{{ name }}-error" data-error-for="{{ name }}"{% if not errors.get(name) %} hidden{% endif %}>{{ errors.get(name, '') }}</span>{% endmacro %}
+{% block body %}
+  <div class="site-notice">A fresh start, one load at a time. <span>Explore our services below.</span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Dina’s Laundry Shop home"><img src="{{ url_for('static', filename='images/logo.svg') }}" width="282" height="64" alt="Dina’s Laundry Shop"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden><span class="menu-lines" aria-hidden="true"></span><span class="menu-label">Menu</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#services">Services & rates</a><a href="#how-it-works">How it works</a><a href="#faq">FAQs</a><a href="#contact">Contact</a>
+        <a class="button button-small" href="#pickup">Book a Pickup {{ icon('arrow') }}</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Fresh clothes.<br>A little more<br><em>you time.</em></h1>
+        <p>From the everyday pile to the weekend linens, let Dina’s take laundry off your list.</p>
+        <div class="hero-actions"><a class="button" href="#pickup">Book a Pickup {{ icon('arrow') }}</a><a class="text-link" href="#services">Explore our services</a></div>
+        <div class="hero-note">{{ icon('drop') }}<span>Your laundry day, with a little less to do.</span></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-photo" src="{{ url_for('static', filename='images/laundry-hero.webp') }}" alt="Fresh cream and aqua towels folded in a teal laundry basket" width="1120" height="1400" fetchpriority="high">
+        <div class="laundry-tag" aria-hidden="true"><svg class="tag-spark" viewBox="0 0 40 40"><path d="M20 2c0 12-6 18-18 18 12 0 18 6 18 18 0-12 6-18 18-18C26 20 20 14 20 2Z"/></svg><span>Small chore.<br><strong>Big sigh of relief.</strong></span></div>
+        <span class="photo-caption">A little care goes a long way.</span>
+      </div>
+    </section>
+
+    <div class="service-ribbon" aria-label="Available laundry services"><div class="container ribbon-inner"><span>{{ icon('shirt') }}Wash, dry & fold</span><span>{{ icon('iron') }}Ironing</span><span>{{ icon('bed') }}Bedding</span><a href="#estimate">Find your laundry estimate {{ icon('arrow') }}</a></div></div>
+
+    <section class="section container services-section" id="services" aria-labelledby="services-title">
+      <div class="section-heading"><h2 id="services-title">A fresh take on<br>your laundry routine.</h2><div><p>Everyday essentials or a fresh set of sheets. <br>Choose the care your laundry needs.</p><span class="sample-label">Sample rates · subject to confirmation</span></div></div>
+      <div class="service-list">
+        <article class="service-row"><div class="service-art">{{ icon('shirt') }}</div><div class="service-description"><h3>Wash, dry & fold</h3><p>For the clothes that see you through the week. Washed, dried, and neatly folded.</p></div><div class="service-price"><span>₱{{ '%g'|format(services['wash-fold'].rate) }}<small> / kg</small></span><small>Sample rate</small></div><a class="round-link" href="#pickup" data-service="wash-fold" aria-label="Request wash, dry and fold">{{ icon('arrow') }}</a></article>
+        <article class="service-row"><div class="service-art">{{ icon('iron') }}</div><div class="service-description"><h3>Ironing</h3><p>A finishing touch for shirts, uniforms, and the pieces you like looking crisp.</p></div><div class="service-price"><span>₱{{ '%g'|format(services['ironing'].rate) }}<small> / kg</small></span><small>Sample rate</small></div><a class="round-link" href="#pickup" data-service="ironing" aria-label="Request ironing">{{ icon('arrow') }}</a></article>
+        <article class="service-row"><div class="service-art">{{ icon('bed') }}</div><div class="service-description"><h3>Bedding</h3><p>Sheets, pillowcases, and blankets. Bring a fresh feeling back to bedtime.</p></div><div class="service-price"><span>₱{{ '%g'|format(services['bedding'].rate) }}<small> / kg</small></span><small>Sample rate</small></div><a class="round-link" href="#pickup" data-service="bedding" aria-label="Request bedding care">{{ icon('arrow') }}</a></article>
+      </div>
+      <p class="pricing-note">These are illustrative prices, not confirmed shop rates. Final pricing depends on actual weight, item requirements, and confirmed rates. Pickup or delivery fees, if applicable, will be confirmed separately.</p>
+    </section>
+
+    <section class="estimate-section" id="estimate" aria-labelledby="estimate-title">
+      <div class="container estimate-inner"><div class="estimate-copy"><h2 id="estimate-title">Less guesswork.<br><em>More fresh starts.</em></h2><p>Have a load in mind? Get a quick estimate before you request a pickup.</p><svg class="estimate-wave" viewBox="0 0 260 60" fill="none" aria-hidden="true"><path d="M2 30c30-35 58 35 88 0s58 35 88 0 58 35 80 0M2 48c30-35 58 35 88 0s58 35 88 0 58 35 80 0"/></svg></div>
+        <form id="calculator" class="calculator" aria-label="Laundry estimate calculator">
+          <div class="calculator-fields"><div class="field"><label for="calc-service">Your laundry service</label><select id="calc-service" name="calc-service">{% for key, service in services.items() %}<option value="{{ key }}" data-rate="{{ service.rate }}">{{ service.name }}</option>{% endfor %}</select></div><div class="field"><label for="calc-weight">Estimated weight <span>(kg)</span></label><div class="weight-control"><button type="button" id="weight-minus" aria-label="Decrease weight by half a kilogram">−</button><input id="calc-weight" name="calc-weight" type="number" min="0.5" max="100" step="0.1" value="5" inputmode="decimal" aria-describedby="calc-error"><button type="button" id="weight-plus" aria-label="Increase weight by half a kilogram">+</button></div></div></div>
+          <p id="calc-error" class="field-error" role="status" hidden></p>
+          <div class="estimate-result"><div><span>Your sample estimate</span><output id="calc-total" for="calc-service calc-weight" aria-live="polite">₱{{ '%.2f'|format(services['wash-fold'].rate * 5) }}</output></div><span id="calc-breakdown">5 kg × ₱{{ '%g'|format(services['wash-fold'].rate) }}/kg</span></div>
+          <p class="calculator-disclaimer">An estimate only. Final cost depends on actual weight and confirmed rates. Any pickup or delivery fee is extra and subject to confirmation.</p>
+          <a class="calculator-link" id="use-estimate" href="#pickup">Use this estimate for my pickup {{ icon('arrow') }}</a>
+          <noscript><p class="no-script-note">Enable JavaScript for the interactive estimate. Multiply your weight by the sample rate above.</p></noscript>
+        </form>
+      </div>
+    </section>
+
+    <section class="section container process-section" id="how-it-works" aria-labelledby="process-title">
+      <div class="section-heading"><h2 id="process-title">From your basket.<br>Back to your day.</h2><p>Here’s how a pickup request works. <br>We’ll confirm the details before it goes ahead.</p></div>
+      <ol class="process-list"><li><span class="step-number">1</span>{{ icon('bag') }}<h3>Tell us about your load</h3><p>Choose a service, share your address, and request a pickup date and time.</p></li><li><span class="step-number">2</span>{{ icon('wash') }}<h3>We confirm & clean</h3><p>The shop confirms availability, weighs your laundry, and agrees the cost with you.</p></li><li><span class="step-number">3</span>{{ icon('truck') }}<h3>Fresh laundry, back to you</h3><p>Delivery arrangements and turnaround time are confirmed with the shop.</p></li></ol>
+    </section>
+
+    <section class="pickup-section" id="pickup" aria-labelledby="pickup-title">
+      <div class="container pickup-grid"><div class="pickup-intro"><h2 id="pickup-title">Let’s lighten<br><em>your load.</em></h2><p>A few details, and your next laundry day is one step closer.</p><div class="request-explainer">{{ icon('check') }}<p>A request first, a confirmed plan next. Your preferred date and time are subject to availability.</p></div><div class="pickup-drawing" aria-hidden="true">{{ icon('drop') }}<span>More time for<br>the everyday good.</span></div></div>
+        <div class="pickup-form-wrap">
+          {% if demo %}<div class="preview-notice"><strong>Website preview</strong><p>You can explore the form, but requests are not saved or sent to the shop in this mode.</p></div>{% endif %}
+          <form id="pickup-form" action="{{ url_for('main.pickup_request') }}" method="post" aria-describedby="request-note"{% if form_message %} data-server-error="true"{% endif %}>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="request_key" value="{{ session.booking_nonce }}">
+            <div id="form-status" class="form-status" role="alert" tabindex="-1"{% if not form_message %} hidden{% endif %}>{{ form_message or '' }}</div>
+            <div id="pickup-fields">
+              <p class="form-topline">Your pickup details <span>All fields required unless marked optional.</span></p>
+              <div class="form-grid">
+                <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" placeholder="Your full name" required minlength="2" maxlength="100" value="{{ values.get('name', '') }}" aria-describedby="name-error">{{ field_error('name') }}</div>
+                <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="0917 123 4567" required maxlength="30" value="{{ values.get('phone', '') }}" aria-describedby="phone-error">{{ field_error('phone') }}</div>
+                <div class="field field-full"><label for="address">Pickup address</label><textarea id="address" name="address" autocomplete="street-address" rows="2" placeholder="House / unit, street, barangay, city, and a nearby landmark" required minlength="10" maxlength="500" aria-describedby="address-error">{{ values.get('address', '') }}</textarea>{{ field_error('address') }}</div>
+                <div class="field"><label for="service">Laundry service</label><select id="service" name="service" required aria-describedby="service-error"><option value="">Select a service</option>{% for key, service in services.items() %}<option value="{{ key }}"{% if values.get('service') == key %} selected{% endif %}>{{ service.name }}</option>{% endfor %}</select>{{ field_error('service') }}</div>
+                <div class="field"><label for="weight">Estimated weight <span>(kg)</span></label><input id="weight" name="weight" type="number" min="0.5" max="100" step="0.1" inputmode="decimal" placeholder="e.g. 5" required value="{{ values.get('weight', '') }}" aria-describedby="weight-error">{{ field_error('weight') }}</div>
+                <div class="field"><label for="date">Preferred pickup date</label><input id="date" name="date" type="date" min="{{ min_date }}" max="{{ max_date }}" required value="{{ values.get('date', '') }}" aria-describedby="date-error date-hint">{{ field_error('date') }}<span class="field-hint" id="date-hint">Tomorrow to 30 days ahead · Philippine time</span></div>
+                <div class="field"><label for="time">Preferred pickup time</label><select id="time" name="time" required aria-describedby="time-error time-hint"><option value="">Select a time window</option>{% for key, label in time_slots.items() %}<option value="{{ key }}"{% if values.get('time') == key %} selected{% endif %}>{{ label }}</option>{% endfor %}</select>{{ field_error('time') }}<span class="field-hint" id="time-hint">Sample windows · availability to be confirmed</span></div>
+                <div class="field field-full"><label for="instructions">Anything we should know? <span>(optional)</span></label><textarea id="instructions" name="instructions" rows="2" maxlength="1000" placeholder="Special care notes or pickup instructions" aria-describedby="instructions-error">{{ values.get('instructions', '') }}</textarea>{{ field_error('instructions') }}</div>
+              </div>
+              <p class="privacy-note" id="request-note">Your details are used to arrange this request. Please leave out payment details and other sensitive information. Final weight, price, service area, and availability need shop confirmation.</p>
+              <button class="button submit-button" type="submit"><span class="button-label">Request my pickup</span><span class="spinner" aria-hidden="true" hidden></span>{{ icon('arrow') }}</button>
+              <p class="form-footnote">No payment is collected on this website.</p>
+            </div>
+            <div id="booking-success" class="booking-success" role="status" tabindex="-1" hidden><div class="success-mark">{{ icon('check') }}</div><h3>Your request is in.</h3><p>Your pickup request has been saved. Keep this reference for your records.</p><strong class="booking-reference" id="booking-reference"></strong><p>This is a request, not a confirmed appointment. The shop still needs to confirm availability, price, and pickup arrangements.</p><a class="button" href="{{ url_for('main.new_request') }}">Request another pickup {{ icon('arrow') }}</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container faq-section" id="faq" aria-labelledby="faq-title"><div class="faq-intro"><h2 id="faq-title">A few things<br>you might be <br><em>wondering.</em></h2><p>A little clarity before laundry day.</p></div><div class="faq-list">
+      <details><summary>Are these the shop’s final prices? {{ icon('plus') }}</summary><p>No. All rates shown here are sample rates. Your final price depends on actual laundry weight, item requirements, and rates confirmed by the shop. Any pickup or delivery fee is confirmed separately.</p></details>
+      <details><summary>Is my pickup confirmed when I submit? {{ icon('plus') }}</summary><p>A saved request means your details have been received by the website. It does not reserve a pickup slot. The shop needs to confirm your preferred date and time, service area, and final arrangements.</p></details>
+      <details><summary>How long does the laundry take? {{ icon('plus') }}</summary><p>Turnaround times have not been provided yet. Please confirm the cleaning and delivery schedule with the shop before your pickup.</p></details>
+      <details><summary>What areas do you collect from? {{ icon('plus') }}</summary><p>The pickup and delivery service area is still to be confirmed. Share your full address in your request so the shop can check availability.</p></details>
+      <details><summary>What if I don’t know my laundry’s weight? {{ icon('plus') }}</summary><p>An approximate weight is fine for a request. The calculator gives a sample estimate; the shop will weigh the laundry and confirm the cost. Enter a weight from 0.5 to 100 kg.</p></details>
+      <details><summary>Can I include special care instructions? {{ icon('plus') }}</summary><p>Yes. Add them to the optional instructions field, including any care label concerns. The shop must confirm whether it can handle delicate, specialist, or unusual items.</p></details>
+    </div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><h2 id="contact-title">Good laundry days<br>start with a hello.</h2><p>Shop information is being finalized.<br>The details below are placeholders until confirmed.</p></div><dl class="contact-details"><div><dt>{{ icon('pin') }}Visit the shop</dt><dd>[Shop address to be confirmed]</dd><dd>[Pickup service area to be confirmed]</dd></div><div><dt>{{ icon('phone') }}Get in touch</dt><dd>[Phone number to be confirmed]</dd><dd>[Email address to be confirmed]</dd></div><div><dt>{{ icon('clock') }}Business hours</dt><dd>[Opening days and hours to be confirmed]</dd><dd>Pickup times are subject to confirmation.</dd></div></dl></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#home">Dina’s <span>Laundry Shop</span></a><p>A little less laundry. A little more life.</p><a href="#home">Back to top ↑</a></div><div class="container footer-bottom"><span>© {{ 2026 }} Dina’s Laundry Shop</span><span>Sample rates. Shop details awaiting confirmation.</span><a href="{{ url_for('static', filename='images/logo.svg') }}" download="dinas-laundry-logo.svg">Download our logo</a></div></footer>
+{% endblock %}

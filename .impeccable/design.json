@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-01T07:53:15.868638+00:00",
+  "title": "Design System: Dina’s Laundry Shop",
+  "extensions": {
+    "colorMeta": {
+      "cream": {
+        "role": "neutral",
+        "displayName": "Warm Cream",
+        "canonical": "#faf7ef",
+        "tonalRamp": [
+          "oklch(15% 0.0033 89.72)",
+          "oklch(26% 0.0066 89.72)",
+          "oklch(38% 0.0094 89.72)",
+          "oklch(49% 0.0110 89.72)",
+          "oklch(61% 0.0110 89.72)",
+          "oklch(72% 0.0088 89.72)",
+          "oklch(84% 0.0055 89.72)",
+          "oklch(95% 0.0017 89.72)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#fffefa",
+        "tonalRamp": [
+          "oklch(15% 0.0016 95.10)",
+          "oklch(26% 0.0032 95.10)",
+          "oklch(38% 0.0046 95.10)",
+          "oklch(49% 0.0054 95.10)",
+          "oklch(61% 0.0054 95.10)",
+          "oklch(72% 0.0043 95.10)",
+          "oklch(84% 0.0027 95.10)",
+          "oklch(95% 0.0008 95.10)"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Navy Ink",
+        "canonical": "#172f36",
+        "tonalRamp": [
+          "oklch(15% 0.0098 218.76)",
+          "oklch(26% 0.0195 218.76)",
+          "oklch(38% 0.0277 218.76)",
+          "oklch(49% 0.0325 218.76)",
+          "oklch(61% 0.0325 218.76)",
+          "oklch(72% 0.0260 218.76)",
+          "oklch(84% 0.0163 218.76)",
+          "oklch(95% 0.0049 218.76)"
+        ]
+      },
+      "teal": {
+        "role": "primary",
+        "displayName": "Deep Teal",
+        "canonical": "#12615b",
+        "tonalRamp": [
+          "oklch(15% 0.0217 187.11)",
+          "oklch(26% 0.0434 187.11)",
+          "oklch(38% 0.0614 187.11)",
+          "oklch(49% 0.0723 187.11)",
+          "oklch(61% 0.0723 187.11)",
+          "oklch(72% 0.0578 187.11)",
+          "oklch(84% 0.0361 187.11)",
+          "oklch(95% 0.0108 187.11)"
+        ]
+      },
+      "teal-dark": {
+        "role": "primary",
+        "displayName": "Deep Teal Hover",
+        "canonical": "#0a4945",
+        "tonalRamp": [
+          "oklch(15% 0.0179 188.29)",
+          "oklch(26% 0.0358 188.29)",
+          "oklch(38% 0.0507 188.29)",
+          "oklch(49% 0.0597 188.29)",
+          "oklch(61% 0.0597 188.29)",
+          "oklch(72% 0.0477 188.29)",
+          "oklch(84% 0.0298 188.29)",
+          "oklch(95% 0.0090 188.29)"
+        ]
+      },
+      "mint": {
+        "role": "neutral",
+        "displayName": "Linen Mint",
+        "canonical": "#dfebe3",
+        "tonalRamp": [
+          "oklch(15% 0.0050 156.90)",
+          "oklch(26% 0.0100 156.90)",
+          "oklch(38% 0.0141 156.90)",
+          "oklch(49% 0.0166 156.90)",
+          "oklch(61% 0.0166 156.90)",
+          "oklch(72% 0.0133 156.90)",
+          "oklch(84% 0.0083 156.90)",
+          "oklch(95% 0.0025 156.90)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Sage Ink",
+        "canonical": "#54665f",
+        "tonalRamp": [
+          "oklch(15% 0.0073 169.76)",
+          "oklch(26% 0.0147 169.76)",
+          "oklch(38% 0.0208 169.76)",
+          "oklch(49% 0.0245 169.76)",
+          "oklch(61% 0.0245 169.76)",
+          "oklch(72% 0.0196 169.76)",
+          "oklch(84% 0.0122 169.76)",
+          "oklch(95% 0.0037 169.76)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Tailored Rule",
+        "canonical": "#d6dbd0",
+        "tonalRamp": [
+          "oklch(15% 0.0047 126.84)",
+          "oklch(26% 0.0095 126.84)",
+          "oklch(38% 0.0134 126.84)",
+          "oklch(49% 0.0158 126.84)",
+          "oklch(61% 0.0158 126.84)",
+          "oklch(72% 0.0126 126.84)",
+          "oklch(84% 0.0079 126.84)",
+          "oklch(95% 0.0024 126.84)"
+        ]
+      },
+      "error": {
+        "role": "semantic",
+        "displayName": "Error Red",
+        "canonical": "#a12727",
+        "tonalRamp": [
+          "oklch(15% 0.0476 25.77)",
+          "oklch(26% 0.0951 25.77)",
+          "oklch(38% 0.1348 25.77)",
+          "oklch(49% 0.1585 25.77)",
+          "oklch(61% 0.1585 25.77)",
+          "oklch(72% 0.1268 25.77)",
+          "oklch(84% 0.0793 25.77)",
+          "oklch(95% 0.0238 25.77)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field Stroke",
+        "canonical": "#bcc8bd",
+        "tonalRamp": [
+          "oklch(15% 0.0060 147.80)",
+          "oklch(26% 0.0120 147.80)",
+          "oklch(38% 0.0170 147.80)",
+          "oklch(49% 0.0201 147.80)",
+          "oklch(61% 0.0201 147.80)",
+          "oklch(72% 0.0160 147.80)",
+          "oklch(84% 0.0100 147.80)",
+          "oklch(95% 0.0030 147.80)"
+        ]
+      },
+      "pickup-ground": {
+        "role": "neutral",
+        "displayName": "Pickup Ground",
+        "canonical": "#eef0e7",
+        "tonalRamp": [
+          "oklch(15% 0.0036 116.81)",
+          "oklch(26% 0.0073 116.81)",
+          "oklch(38% 0.0103 116.81)",
+          "oklch(49% 0.0121 116.81)",
+          "oklch(61% 0.0121 116.81)",
+          "oklch(72% 0.0097 116.81)",
+          "oklch(84% 0.0061 116.81)",
+          "oklch(95% 0.0018 116.81)"
+        ]
+      },
+      "focus": {
+        "role": "semantic",
+        "displayName": "Warm Focus",
+        "canonical": "#b45b2a",
+        "tonalRamp": [
+          "oklch(15% 0.0393 46.83)",
+          "oklch(26% 0.0786 46.83)",
+          "oklch(38% 0.1113 46.83)",
+          "oklch(49% 0.1310 46.83)",
+          "oklch(61% 0.1310 46.83)",
+          "oklch(72% 0.1048 46.83)",
+          "oklch(84% 0.0655 46.83)",
+          "oklch(95% 0.0196 46.83)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Editorial Display",
+        "purpose": "Hero headline with observed phone overrides."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Shared serif headline baseline with local section overrides."
+      },
+      "service-title": {
+        "displayName": "Service Title",
+        "purpose": "Serif title in the ruled service row."
+      },
+      "title": {
+        "displayName": "Structural Title",
+        "purpose": "Sans-serif smaller headings."
+      },
+      "body": {
+        "displayName": "Everyday Body",
+        "purpose": "Default prose baseline and general 70ch measure."
+      },
+      "label": {
+        "displayName": "Field Label",
+        "purpose": "Sentence-case native field labels."
+      },
+      "button": {
+        "displayName": "Action Label",
+        "purpose": "Primary action text; compact variants reduce the size."
+      },
+      "estimate": {
+        "displayName": "Calculated Total",
+        "purpose": "Large serif sample estimate with tabular numerals."
+      }
+    },
+    "shadows": [
+      {
+        "name": "care-tag-rest",
+        "value": "0 10px 24px #172f3612",
+        "purpose": "Single softly lifted paper tag at rest."
+      },
+      {
+        "name": "care-tag-settling",
+        "value": "0 16px 30px #172f3620",
+        "purpose": "Entrance starting frame, not a working-surface shadow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Tag settling, button lift, navigation underline, and FAQ icon."
+      },
+      {
+        "name": "state",
+        "value": "0.2s",
+        "purpose": "Color, stroke, and navigation underline transitions."
+      },
+      {
+        "name": "button-lift",
+        "value": "0.3s",
+        "purpose": "Primary button vertical movement."
+      },
+      {
+        "name": "faq-rotation",
+        "value": "0.25s",
+        "purpose": "Plus rotation when a disclosure opens."
+      },
+      {
+        "name": "tag-entrance",
+        "value": "900ms",
+        "purpose": "Tag settles from translateY(10px) rotate(-9deg) to rotate(-5deg)."
+      },
+      {
+        "name": "spinner",
+        "value": "0.8s linear infinite",
+        "purpose": "Saving-request loading indicator."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "Reduced durations with one iteration; tag animation removed and scrolling immediate."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1500px"
+      },
+      {
+        "name": "desktop-compact",
+        "value": "1150px"
+      },
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "720px"
+      },
+      {
+        "name": "phone-small",
+        "value": "400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "description": "The principal pickup action; darkens and lifts on hover.",
+      "html": "<button class=\"ds-button\" type=\"button\">Book a Pickup <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-button { display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 24px;\n  min-height: 56px;\n  padding: 15px 24px;\n  border: 0;\n  border-radius: 6px;\n  background: var(--teal,#12615b);\n  color: var(--paper,#fffefa);\n  font-size: 0.92rem;\n  font-weight: 600;\n  text-decoration: none;\n  line-height: 1.4;\n  transition:\n    background 0.2s,\n    transform 0.3s var(--ease,cubic-bezier(0.16, 1, 0.3, 1)); }\n.ds-button:hover { background: var(--teal-dark,#0a4945);\n  transform: translateY(-2px); }\n.ds-button:active { transform: translateY(0); }\n.ds-button { font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.4; }\n.ds-button:focus-visible { outline:3px solid #b45b2a; outline-offset:5px; }\n.ds-button:disabled { cursor:wait; opacity:.65; }\n.ds-icon { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }\n@media(prefers-reduced-motion:reduce) { .ds-button { transition-duration:.01ms; } }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Compact Button",
+      "kind": "button",
+      "description": "The smaller pickup action used in the header.",
+      "html": "<a class=\"ds-button ds-button-small\" href=\"#pickup\">Book a Pickup <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-button { display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 24px;\n  min-height: 56px;\n  padding: 15px 24px;\n  border: 0;\n  border-radius: 6px;\n  background: var(--teal,#12615b);\n  color: var(--paper,#fffefa);\n  font-size: 0.92rem;\n  font-weight: 600;\n  text-decoration: none;\n  line-height: 1.4;\n  transition:\n    background 0.2s,\n    transform 0.3s var(--ease,cubic-bezier(0.16, 1, 0.3, 1)); }\n.ds-button:hover { background: var(--teal-dark,#0a4945);\n  transform: translateY(-2px); }\n.ds-button:active { transform: translateY(0); }\n.ds-button { font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.4; }\n.ds-button:focus-visible { outline:3px solid #b45b2a; outline-offset:5px; }\n.ds-button:disabled { cursor:wait; opacity:.65; }\n.ds-icon { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }\n@media(prefers-reduced-motion:reduce) { .ds-button { transition-duration:.01ms; } }\n.ds-button-small { min-height: 46px;\n  padding: 12px 18px;\n  font-size: 0.82rem;\n  gap: 16px; }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }",
+      "refersTo": "button-small"
+    },
+    {
+      "name": "Circular Service Action",
+      "kind": "button",
+      "description": "Fine bordered service action that inverts to teal on hover.",
+      "html": "<a class=\"ds-round\" href=\"#pickup\" aria-label=\"Request wash, dry and fold\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-round { width: 46px;\n  height: 46px;\n  display: grid;\n  place-items: center;\n  border-radius: 50%;\n  border: 1px solid #acbfb2;\n  color: var(--teal,#12615b);\n  transition:\n    background 0.2s,\n    color 0.2s; }\n.ds-round:hover { background: var(--teal,#12615b);\n  color: var(--cream,#faf7ef); }\n.ds-round:focus-visible { outline:3px solid #b45b2a; outline-offset:5px; }\n.ds-icon { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }",
+      "refersTo": "button-round"
+    },
+    {
+      "name": "Native Text Field",
+      "kind": "input",
+      "description": "Paper-filled native field with visible stroke and teal focus; invalid fields use written red errors.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-name\">Full name</label><input id=\"ds-name\" autocomplete=\"name\" placeholder=\"Your full name\" required minlength=\"2\" maxlength=\"100\"></div>",
+      "css": ".ds-field { display: flex;\n  flex-direction: column;\n  min-width: 0; }\n.ds-field label { font-size: 0.8rem;\n  font-weight: 600;\n  line-height: 1.5;\n  margin-bottom: 9px; }\n.ds-field { font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.65; color:var(--navy,#172f36); }\n.ds-field input { width: 100%;\n  max-width: 100%;\n  border: 1px solid #bcc8bd;\n  background: var(--paper,#fffefa);\n  border-radius: 5px;\n  font-size: 0.85rem;\n  line-height: 1.5;\n  padding: 13px 14px;\n  transition: border-color 0.2s;\n  min-height: 48px;\n  box-shadow: none; }\n.ds-field input { font-family:inherit; color:inherit; caret-color:var(--teal,#12615b); }\n.ds-field input::placeholder { color: #6b736a;\n  opacity: 1; }\n.ds-field input:hover { border-color: var(--teal,#12615b); }\n.ds-field input:focus-visible { outline: 2px solid var(--teal,#12615b);\n  outline-offset: 3px; }\n.ds-field input[aria-invalid=\"true\"] { border-color: var(--error,#a12727); }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }",
+      "refersTo": "field"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "description": "Sentence-case links and a compact pickup action. The product uses its Menu disclosure on phones.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#services\">Services &amp; rates</a><a href=\"#how-it-works\">How it works</a><a href=\"#faq\">FAQs</a><a class=\"ds-button ds-button-small\" href=\"#pickup\">Book a Pickup <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a></nav>",
+      "css": ".ds-button { display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 24px;\n  min-height: 56px;\n  padding: 15px 24px;\n  border: 0;\n  border-radius: 6px;\n  background: var(--teal,#12615b);\n  color: var(--paper,#fffefa);\n  font-size: 0.92rem;\n  font-weight: 600;\n  text-decoration: none;\n  line-height: 1.4;\n  transition:\n    background 0.2s,\n    transform 0.3s var(--ease,cubic-bezier(0.16, 1, 0.3, 1)); }\n.ds-button:hover { background: var(--teal-dark,#0a4945);\n  transform: translateY(-2px); }\n.ds-button:active { transform: translateY(0); }\n.ds-button { font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.4; }\n.ds-button:focus-visible { outline:3px solid #b45b2a; outline-offset:5px; }\n.ds-button:disabled { cursor:wait; opacity:.65; }\n.ds-icon { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }\n@media(prefers-reduced-motion:reduce) { .ds-button { transition-duration:.01ms; } }\n.ds-button-small { min-height: 46px;\n  padding: 12px 18px;\n  font-size: 0.82rem;\n  gap: 16px; }\n.ds-nav { display:flex; flex-wrap:wrap; align-items:center; gap:30px; background:var(--cream,#faf7ef); color:var(--navy,#172f36); font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.65; }\n.ds-nav > a:not(.ds-button) { font-size: 0.86rem;\n  font-weight: 500;\n  text-decoration: none;\n  white-space: nowrap;\n  padding-block: 12px;\n  position: relative; }\n.ds-nav > a:not(.ds-button)::after { content: \"\";\n  position: absolute;\n  bottom: 7px;\n  left: 0;\n  width: 100%;\n  height: 1px;\n  background: var(--teal,#12615b);\n  transform: scaleX(0);\n  transform-origin: left;\n  transition: transform 0.2s var(--ease,cubic-bezier(0.16, 1, 0.3, 1)); }\n.ds-nav > a:hover::after { transform: scaleX(1); }\n.ds-nav > a { color:inherit; }\n.ds-nav > a:focus-visible { outline:3px solid #b45b2a; outline-offset:5px; }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }"
+    },
+    {
+      "name": "Sample-rate Label",
+      "kind": "chip",
+      "description": "Noninteractive qualifier for illustrative pricing; not a reusable heading prefix.",
+      "html": "<span class=\"ds-sample-label\">Sample rates · subject to confirmation</span>",
+      "css": ".ds-sample-label { display: inline-block;\n  margin-top: 15px;\n  padding: 4px 10px;\n  background: #ece9dc;\n  color: #5b5947;\n  border-radius: 4px;\n  font-size: 0.69rem;\n  font-weight: 500; }\n.ds-sample-label { font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.65; }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }",
+      "refersTo": "sample-label"
+    },
+    {
+      "name": "Calculator Surface",
+      "kind": "card",
+      "description": "Flat cream working surface with native fields, a ruled serif total, and a text action. The displayed amount is an illustrative static preview.",
+      "html": "<section class=\"ds-calculator\" aria-label=\"Laundry estimate calculator\"><div class=\"ds-calc-fields\"><div class=\"ds-calc-field\"><label for=\"ds-service\">Your laundry service</label><select id=\"ds-service\"><option>Wash, dry &amp; fold</option><option>Ironing</option><option>Bedding</option></select></div><div class=\"ds-calc-field\"><label for=\"ds-weight\">Estimated weight <span>(kg)</span></label><div class=\"ds-weight\"><button type=\"button\" aria-label=\"Decrease weight by half a kilogram\">−</button><input id=\"ds-weight\" type=\"number\" value=\"5\" min=\".5\" max=\"100\" step=\".1\"><button type=\"button\" aria-label=\"Increase weight by half a kilogram\">+</button></div></div></div><div class=\"ds-result\"><div><span>Your sample estimate</span><output>₱200.00</output></div><span>5 kg × ₱40/kg</span></div><p class=\"ds-calc-note\">An estimate only. Final cost depends on actual weight and confirmed rates.</p><a class=\"ds-calc-link\" href=\"#pickup\">Use this estimate for my pickup <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a></section>",
+      "css": ".ds-calculator { background: var(--cream,#faf7ef);\n  color: var(--navy,#172f36);\n  border-radius: var(--radius,12px);\n  padding: 34px; }\n.ds-calc-fields { display: grid;\n  grid-template-columns: 1.2fr 1fr;\n  gap: 20px; }\n.ds-calc-field { display: flex;\n  flex-direction: column;\n  min-width: 0; }\n.ds-calc-field label { font-size: 0.8rem;\n  font-weight: 600;\n  line-height: 1.5;\n  margin-bottom: 9px; }\n.ds-calc-field label span { font-weight: 400;\n  color: var(--muted,#54665f); }\n.ds-weight { display: flex;\n  border: 1px solid #bcc8bd;\n  border-radius: 5px;\n  background: var(--paper,#fffefa);\n  overflow: hidden; }\n.ds-weight:focus-within { outline: 2px solid var(--teal,#12615b);\n  outline-offset: 3px; }\n.ds-weight input { padding-inline: 0;\n  text-align: center;\n  min-width: 0;\n  border: 0;\n  border-radius: 0;\n  font-variant-numeric: tabular-nums;\n  appearance: textfield;\n  -moz-appearance: textfield;\n  min-height: 48px; }\n.ds-weight input:focus-visible { outline: none; }\n.ds-weight button { min-width: 42px;\n  border: 0;\n  background: transparent;\n  font-size: 1.2rem;\n  color: var(--teal,#12615b); }\n.ds-weight button:hover { background: var(--mint,#dfebe3); }\n.ds-weight button:disabled { cursor: default;\n  opacity: 0.4; }\n.ds-result { display: flex;\n  justify-content: space-between;\n  align-items: flex-end;\n  gap: 16px;\n  border-block: 1px solid var(--line,#d6dbd0);\n  padding-block: 23px;\n  margin-top: 25px;\n  font-variant-numeric: tabular-nums; }\n.ds-result > div { display: flex;\n  flex-direction: column;\n  gap: 2px; }\n.ds-result > div > span { font-size: 0.75rem;\n  color: var(--muted,#54665f); }\n.ds-result output { font-family: var(--serif,Fraunces, Georgia, serif);\n  font-size: 3.3rem;\n  color: var(--teal,#12615b);\n  letter-spacing: -0.035em;\n  line-height: 1.2; }\n.ds-result > span { font-size: 0.73rem;\n  color: var(--muted,#54665f);\n  padding-bottom: 7px;\n  text-align: right; }\n.ds-calc-note { font-size: 0.7rem;\n  color: var(--muted,#54665f);\n  margin-top: 16px;\n  line-height: 1.65; }\n.ds-calc-link { display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 15px;\n  margin-top: 20px;\n  text-decoration: none;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--teal,#12615b);\n  min-height: 36px; }\n.ds-calc-link:hover { text-decoration: underline; }\n.ds-calc-link .ds-icon { width: 19px;\n  height: 19px; }\n.ds-calculator { font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.65; }\n.ds-calc-field select { width: 100%;\n  max-width: 100%;\n  border: 1px solid #bcc8bd;\n  background: var(--paper,#fffefa);\n  border-radius: 5px;\n  font-size: 0.85rem;\n  line-height: 1.5;\n  padding: 13px 14px;\n  transition: border-color 0.2s;\n  min-height: 48px;\n  box-shadow: none; padding-right:28px; color:inherit; font-family:inherit; }\n.ds-weight input { font-family:inherit; color:inherit; font-size:.85rem; line-height:1.5; }\n.ds-calc-field select:hover { border-color:var(--teal,#12615b); }\n.ds-calc-field select:focus-visible { outline:2px solid var(--teal,#12615b); outline-offset:3px; }\n.ds-weight button:focus-visible,.ds-calc-link:focus-visible { outline:3px solid #b45b2a; outline-offset:5px; }\n.ds-weight input::-webkit-inner-spin-button,.ds-weight input::-webkit-outer-spin-button { -webkit-appearance:none; margin:0; }\n.ds-icon { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }\n@media(max-width:400px) { .ds-calculator { padding:21px; } .ds-calc-fields { grid-template-columns:1fr; } .ds-result > span { max-width:95px; } }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }",
+      "refersTo": "calculator"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "description": "Ruled service row with a tinted icon tile, serif title, tabular sample price, and circular arrow.",
+      "html": "<article class=\"ds-service\"><div class=\"ds-art\"><svg class=\"ds-icon\" viewBox=\"0 0 32 32\" aria-hidden=\"true\"><path d=\"m10 5-7 5 4 7 4-2v12h10V15l4 2 4-7-7-5c-2 5-10 5-12 0Z\"/></svg></div><div class=\"ds-description\"><h3>Wash, dry &amp; fold</h3><p>For the clothes that see you through the week. Washed, dried, and neatly folded.</p></div><div class=\"ds-price\"><span>₱40<small> / kg</small></span><small>Sample rate</small></div><a class=\"ds-row-action\" href=\"#pickup\" aria-label=\"Request wash, dry and fold\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a></article>",
+      "css": ".ds-service { display: grid;\n  grid-template-columns: 90px 1fr 160px 48px;\n  gap: 28px;\n  align-items: center;\n  padding-block: 30px;\n  border-bottom: 1px solid var(--line,#d6dbd0); }\n.ds-art { width: 78px;\n  height: 78px;\n  display: grid;\n  place-items: center;\n  background: #e8ede3;\n  border-radius: var(--radius,12px);\n  color: var(--teal,#12615b); }\n.ds-art .ds-icon { width: 39px;\n  height: 39px;\n  stroke-width: 1.4; }\n.ds-description h3 { font-family: var(--serif,Fraunces, Georgia, serif);\n  font-size: 1.65rem;\n  font-weight: 500; }\n.ds-description p { font-size: 0.87rem;\n  color: var(--muted,#54665f);\n  max-width: 455px;\n  margin-top: 6px; }\n.ds-price { display: flex;\n  flex-direction: column;\n  font-variant-numeric: tabular-nums; }\n.ds-price > span { font-size: 1.85rem;\n  line-height: 1.25;\n  font-weight: 500;\n  color: var(--teal,#12615b);\n  letter-spacing: -0.025em; }\n.ds-price > span small { font-size: 0.85rem;\n  font-weight: 400;\n  letter-spacing: 0; }\n.ds-price > small { font-size: 0.69rem;\n  color: var(--muted,#54665f);\n  margin-top: 5px; }\n.ds-row-action { width: 46px;\n  height: 46px;\n  display: grid;\n  place-items: center;\n  border-radius: 50%;\n  border: 1px solid #acbfb2;\n  color: var(--teal,#12615b);\n  transition:\n    background 0.2s,\n    color 0.2s; }\n.ds-row-action:hover { background: var(--teal,#12615b);\n  color: var(--cream,#faf7ef); }\n.ds-service { font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.65; background:var(--cream,#faf7ef); color:var(--navy,#172f36); }\n.ds-description h3,.ds-description p { margin:0; }\n.ds-description h3 { line-height:1.3; letter-spacing:-.02em; }\n.ds-description p { margin-top:6px; }\n.ds-row-action:focus-visible { outline:3px solid #b45b2a; outline-offset:5px; }\n.ds-icon { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }\n.ds-art .ds-icon { width:39px; height:39px; stroke-width:1.4; }\n@media(max-width:720px) { .ds-service { grid-template-columns:58px 1fr auto; gap:14px; padding-block:24px; align-items:start; } .ds-art { width:54px; height:58px; border-radius:9px; } .ds-art .ds-icon { width:30px; height:30px; } .ds-description h3 { font-size:1.35rem; line-height:1.35; } .ds-description p { font-size:.78rem; margin-top:8px; } .ds-price { grid-column:2; flex-direction:row; gap:14px; align-items:center; } .ds-price > span { font-size:1.5rem; } .ds-price > small { margin-top:0; font-size:.65rem; } .ds-row-action { grid-column:3; grid-row:1; width:38px; height:38px; margin-top:7px; } }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }"
+    },
+    {
+      "name": "Linen Care Tag",
+      "kind": "custom",
+      "description": "The single tilted paper object; decorative, softly shadowed, and inset-framed.",
+      "html": "<div class=\"ds-tag\" aria-hidden=\"true\"><svg class=\"ds-spark\" viewBox=\"0 0 40 40\"><path d=\"M20 2c0 12-6 18-18 18 12 0 18 6 18 18 0-12 6-18 18-18C26 20 20 14 20 2Z\"/></svg><span>Small chore.<br><strong>Big sigh of relief.</strong></span></div>",
+      "css": ".ds-tag { position: absolute;\n  left: -35px;\n  bottom: 58px;\n  display: flex;\n  align-items: center;\n  gap: 13px;\n  padding: 20px 24px;\n  background: #f0e5cf;\n  color: var(--navy,#172f36);\n  transform: rotate(-5deg);\n  box-shadow: 0 10px 24px #172f3612;\n  font-size: 0.83rem;\n  line-height: 1.5;\n  animation: ds-tag-settle 900ms var(--ease,cubic-bezier(0.16, 1, 0.3, 1)) both; }\n.ds-tag::after { content: \"\";\n  position: absolute;\n  inset: 7px;\n  border: 1px solid #c2b69c;\n  pointer-events: none; }\n.ds-tag strong { font-weight: 600; }\n.ds-spark { width: 35px;\n  height: 35px;\n  fill: var(--teal,#12615b); }\n.ds-tag { position:relative; left:auto; bottom:auto; font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.5; }\n@keyframes ds-tag-settle { from { transform:translateY(10px) rotate(-9deg); box-shadow:0 16px 30px #172f3620; } to { transform:translateY(0) rotate(-5deg); box-shadow:0 10px 24px #172f3612; } }\n@media(prefers-reduced-motion:reduce) { .ds-tag { animation:none; } }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }"
+    },
+    {
+      "name": "FAQ Disclosure",
+      "kind": "custom",
+      "description": "Native ruled disclosure with a rotating plus and muted explanatory copy.",
+      "html": "<div class=\"ds-faq\"><details><summary>Is my pickup confirmed when I submit?<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></summary><p>A saved request means your details have been received by the website. It does not reserve a pickup slot. The shop needs to confirm your preferred date and time, service area, and final arrangements.</p></details></div>",
+      "css": ".ds-faq { border-top: 1px solid var(--line,#d6dbd0); }\n.ds-faq details { border-bottom: 1px solid var(--line,#d6dbd0); }\n.ds-faq summary { display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 30px;\n  font-size: 0.92rem;\n  font-weight: 500;\n  list-style: none;\n  cursor: pointer;\n  padding-block: 23px; }\n.ds-faq summary::-webkit-details-marker { display: none; }\n.ds-faq summary::marker { content: \"\"; }\n.ds-faq summary .ds-icon { width: 19px;\n  height: 19px;\n  color: var(--teal,#12615b);\n  transition: transform 0.25s var(--ease,cubic-bezier(0.16, 1, 0.3, 1)); }\n.ds-faq details[open] summary .ds-icon { transform: rotate(45deg); }\n.ds-faq summary:hover { color: var(--teal,#12615b); }\n.ds-faq details p { color: var(--muted,#54665f);\n  font-size: 0.85rem;\n  padding: 0 38px 24px 0;\n  line-height: 1.85; }\n.ds-faq { font-family:var(--sans,\"DM Sans\",Arial,sans-serif); line-height:1.65; color:var(--navy,#172f36); }\n.ds-faq details p { margin:0; }\n.ds-faq summary:focus-visible { outline:3px solid #b45b2a; outline-offset:5px; }\n.ds-icon { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }\n@media(prefers-reduced-motion:reduce) { * { transition-duration:.01ms !important; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Household Linen Label",
+    "overview": "Warm paper, deep teal, navy ink, and a soft editorial serif make laundry feel like a manageable household ritual. Broad space and tailored rules give practical information a calm, welcoming rhythm. The system pairs linen photography with original drop-and-wave artwork and restrained line icons.\n\nThe expressive elements remain tangible: an arched photograph, a single tilted care tag, and saturated teal grounding the calculator. Operational surfaces are quieter, with upright sans-serif labels, native controls, visible borders, and plainly differentiated states. These rules describe the finished HTML/CSS implementation; the surface contract retains page-specific composition and content strategy.",
+    "keyCharacteristics": [
+      "Warm cream ground with paper-white working surfaces.",
+      "Fraunces for editorial warmth; DM Sans for everyday clarity.",
+      "Tailored dividers and service rows rather than repeated floating cards.",
+      "One tactile care tag and softly arched linen photography.",
+      "Visible focus, native form controls, and reduced-motion support."
+    ],
+    "rules": [
+      {
+        "name": "The Ground and Ink Rule",
+        "body": "Keep the warm cream and paper surfaces paired with navy or muted sage copy; reserve deep teal and navy grounds for clearly bounded sections with light text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Use Fraunces for editorial headlines and selected high-emphasis totals; keep navigation, actions, fields, and explanatory copy in DM Sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single Lift Rule",
+        "body": "Keep working surfaces flat; the care tag carries the page’s small tactile lift.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use warm tonal grounds and fine rules to organize information before adding containers.",
+      "**Do** keep editorial serif warmth and operational sans-serif clarity in their observed roles.",
+      "**Do** retain visible offset keyboard focus, native controls, and text explanations for status.",
+      "**Do** preserve the original drop-and-wave identity and soft linen material character.",
+      "**Do** keep the care tag’s single tactile lift and honor reduced-motion preference."
+    ],
+    "donts": [
+      "**Don't** spread the care tag’s rotation or shadow across forms, service rows, or navigation.",
+      "**Don't** turn the contextual sample-rate label into a general heading-prefix style.",
+      "**Don't** remove field borders or focus outlines from the cream and paper surfaces.",
+      "**Don't** force compact phone service rows or form fields back into their desktop column structure."
+    ]
+  }
+}

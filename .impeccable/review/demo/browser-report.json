@@ -1,0 +1,40 @@
+{
+  "base": "http://127.0.0.1:5000",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "name": "small-mobile",
+      "width": 320,
+      "height": 740,
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "mobile menu / Escape",
+    "calculator / invalid weight / estimate handoff",
+    "demo submit is blocked / data retained / no false success",
+    "client validation / first error focus",
+    "WCAG A/AA automated scan",
+    "reduced motion",
+    "no browser console errors or missing assets",
+    "no JavaScript / server validation / accessible navigation"
+  ],
+  "accessibility": []
+}

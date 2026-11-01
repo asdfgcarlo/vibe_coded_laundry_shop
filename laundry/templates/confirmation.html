@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}Pickup request saved · Dina’s Laundry Shop{% endblock %}
+{% block body %}<main id="main" class="standalone-page container"><a class="brand" href="{{ url_for('main.index') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Dina’s Laundry Shop" width="282" height="64"></a><div class="standalone-message"><h1>Your request is in.</h1><p>Your pickup request has been saved. Keep this reference for your records.</p><strong class="booking-reference">{{ reference }}</strong><p>This is a request, not a confirmed appointment. The shop still needs to confirm availability, price, and pickup arrangements.</p><a class="button" href="{{ url_for('main.new_request') }}">Request another pickup</a></div></main>{% endblock %}
